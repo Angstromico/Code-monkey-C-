@@ -13,7 +13,9 @@ namespace Hello
             string name = "John"; // String variable
             bool isStudent = true; // Boolean variable
             // Output the values of the variables
+            const double pi = 3.14159;
             Console.WriteLine($"Name: {name}, Age: {age}, Is Student: {isStudent}");
+            Console.WriteLine($"Pi: {pi}");
         }
     }
 }
