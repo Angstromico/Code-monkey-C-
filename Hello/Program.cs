@@ -1,6 +1,6 @@
 ﻿using Hello;
 
-Console.WriteLine("Hello, World!");
+Function.Grettings();
 
 // C# most of the time run the code in line sequence, but there are some exceptions. For example, when you use async/await, the code may not run in a strict sequential order.
 
