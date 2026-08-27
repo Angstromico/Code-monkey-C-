@@ -23,3 +23,10 @@ Console.WriteLine($"Sum 1: {sum1}, Sum 2: {sum2}");
 Func<int, int, int> add = (a, b) => a + b;
 int sum3 = add(6, 7);
 Console.WriteLine($"Sum 3: {sum3}");
+
+Func<int, bool> isBool = (x) => x > 0 ? true : false;
+
+bool result1 = isBool(5);
+bool result2 = isBool(-3);
+
+Console.WriteLine($"Result 1: {result1}, Result 2: {result2}");
