@@ -14,3 +14,8 @@ variables.Run();
 
 Greet.Greetings();
 Greet.Greetings("Manuel");
+
+int sum1 = AddNumbers.Add(1,2);
+int sum2 = AddNumbers.Add(3, 4, 5);
+
+Console.WriteLine($"Sum 1: {sum1}, Sum 2: {sum2}");
