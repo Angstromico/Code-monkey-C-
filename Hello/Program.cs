@@ -11,3 +11,6 @@ FlowExample.Run();
 // Run code from Variables.cs
 Variables variables = new Variables();
 variables.Run();
+
+Greet.Greetings();
+Greet.Greetings("Manuel");
