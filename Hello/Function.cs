@@ -2,7 +2,7 @@
 {
     internal class Function
     {
-        public static void Grettings()
+        public static void Run()
         {
             Console.WriteLine("Hello, World!");
         }
