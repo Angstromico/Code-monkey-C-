@@ -19,3 +19,7 @@ int sum1 = AddNumbers.Add(1,2);
 int sum2 = AddNumbers.Add(3, 4, 5);
 
 Console.WriteLine($"Sum 1: {sum1}, Sum 2: {sum2}");
+
+Func<int, int, int> add = (a, b) => a + b;
+int sum3 = add(6, 7);
+Console.WriteLine($"Sum 3: {sum3}");
