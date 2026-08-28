@@ -42,6 +42,8 @@
             bool numberInList = numbersList.Contains(3); // Checking if the list contains the number 3
             Console.WriteLine($"First number: {firstNumber}");
             Console.WriteLine($"Number 3 in the list: {numberInList}");
+            int indexOfList = numbersList.IndexOf(3);
+            Console.WriteLine($"Index of number 3 in the list: {indexOfList}");
             foreach (var number in numbersList)
             {
                 Console.WriteLine(number);
