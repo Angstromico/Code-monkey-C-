@@ -39,7 +39,9 @@
             numbersList.RemoveAt(2); // Removing the element at index 2
             Console.WriteLine("Numbers in the list:");
             int firstNumber = numbersList[0]; // Accessing the first element
+            bool numberInList = numbersList.Contains(3); // Checking if the list contains the number 3
             Console.WriteLine($"First number: {firstNumber}");
+            Console.WriteLine($"Number 3 in the list: {numberInList}");
             foreach (var number in numbersList)
             {
                 Console.WriteLine(number);
