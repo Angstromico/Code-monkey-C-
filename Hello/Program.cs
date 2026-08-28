@@ -30,3 +30,5 @@ bool result1 = isBool(5);
 bool result2 = isBool(-3);
 
 Console.WriteLine($"Result 1: {result1}, Result 2: {result2}");
+
+Arrs.Run();
