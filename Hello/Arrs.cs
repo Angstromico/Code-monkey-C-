@@ -35,6 +35,8 @@
             }
             int sum = numbersList.Sum(); // Sum of the list elements
             Console.WriteLine($"Sum of numbers in the list: {sum}");
+            int count = numbersList.Count();
+            Console.WriteLine($"Count of numbers in the list: {count}");
             Dictionary<string, int> agesDictionary = new Dictionary<string, int>
             {
                 { "Alice", 30 },
