@@ -26,6 +26,24 @@
                 numbersArr[i] = i + 1;
             }
             Console.WriteLine("Numbers Array: " + string.Join(", ", numbersArr));
+
+            List<int> numbersList = new List<int> { 1, 2, 3, 4, 5 }; // List of integers
+            Console.WriteLine("Numbers in the list:");
+            foreach (var number in numbersList)
+            {
+                Console.WriteLine(number);
+            }
+            Dictionary<string, int> agesDictionary = new Dictionary<string, int>
+            {
+                { "Alice", 30 },
+                { "Bob", 25 },
+                { "Charlie", 35 }
+            }; // Dictionary with string keys and integer values
+            Console.WriteLine("Ages in the dictionary:");
+            foreach (var kvp in agesDictionary)
+            {
+                Console.WriteLine($"Name: {kvp.Key}, Age: {kvp.Value}");
+            }
         }
     }
 }
