@@ -30,6 +30,13 @@
             List<int> numbersList = new List<int> { 1, 2, 3, 4, 5 }; // List of integers
             numbersList.Add(6); // Adding an element to the list
             numbersList.Remove(2); // Removing an element from the list
+            numbersList.Insert(1, 10); // Inserting an element at index 1
+            numbersList.Sort(); // Sorting the list
+            numbersList.Reverse(); // Reversing the list
+            //numbersList.Clear(); // Clearing the list
+            numbersList.AddRange(new int[] { 7, 8, 9 }); // Adding multiple elements to the list
+            numbersList.RemoveAll(n => n > 5); // Removing all elements greater than 5
+            numbersList.RemoveAt(2); // Removing the element at index 2
             Console.WriteLine("Numbers in the list:");
             int firstNumber = numbersList[0]; // Accessing the first element
             Console.WriteLine($"First number: {firstNumber}");
