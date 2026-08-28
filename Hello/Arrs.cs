@@ -28,6 +28,8 @@
             Console.WriteLine("Numbers Array: " + string.Join(", ", numbersArr));
 
             List<int> numbersList = new List<int> { 1, 2, 3, 4, 5 }; // List of integers
+            numbersList.Add(6); // Adding an element to the list
+            numbersList.Remove(2); // Removing an element from the list
             Console.WriteLine("Numbers in the list:");
             foreach (var number in numbersList)
             {
