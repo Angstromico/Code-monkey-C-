@@ -31,6 +31,8 @@
             numbersList.Add(6); // Adding an element to the list
             numbersList.Remove(2); // Removing an element from the list
             Console.WriteLine("Numbers in the list:");
+            int firstNumber = numbersList[0]; // Accessing the first element
+            Console.WriteLine($"First number: {firstNumber}");
             foreach (var number in numbersList)
             {
                 Console.WriteLine(number);
