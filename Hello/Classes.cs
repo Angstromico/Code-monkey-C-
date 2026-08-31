@@ -14,6 +14,7 @@
             Console.WriteLine($"Car 1 color: {car1.color}");
 
             Player Manu = new Player("Manu", 100);
+            Manu.TakeDamage(5);
             Console.WriteLine($"Player 1: {Manu.name}, Health: {Manu.health}");
         }
     }
@@ -56,5 +57,14 @@ class Player
     {
         this.name = name;
         this.health = health;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health < 0)
+        {
+            health = 0;
+        }
     }
 }
