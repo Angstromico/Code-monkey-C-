@@ -63,6 +63,28 @@
             {
                 Console.WriteLine($"Name: {kvp.Key}, Age: {kvp.Value}");
             }
+
+            // Empty List with Capacity
+            List<int> emptyListWithCapacity = new List<int>(10); // Creating an empty
+            // list with a specified capacity of 10
+            Console.WriteLine($"Capacity of empty list: {emptyListWithCapacity.Capacity}");
+            Console.WriteLine($"Count of elements in empty list: {emptyListWithCapacity.Count}");
+
+            List<int> numbersCap = new List<int>(2);
+
+            Console.WriteLine($"Count: {numbersCap.Count}");
+            Console.WriteLine($"Capacity: {numbersCap.Capacity}");
+
+            numbersCap.Add(10);
+            numbersCap.Add(20);
+
+            Console.WriteLine($"Count: {numbersCap.Count}");
+            Console.WriteLine($"Capacity: {numbersCap.Capacity}");
+
+            numbersCap.Add(30); // Exceeds the initial capacity
+
+            Console.WriteLine($"Count: {numbersCap.Count}");
+            Console.WriteLine($"Capacity: {numbersCap.Capacity}");
         }
     }
 }
