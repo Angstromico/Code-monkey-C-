@@ -85,6 +85,39 @@
 
             Console.WriteLine($"Count: {numbersCap.Count}");
             Console.WriteLine($"Capacity: {numbersCap.Capacity}");
+
+            LimitedList<int> numbersLimit = new(3);
+
+            numbersLimit.Add(1);
+            numbersLimit.Add(2);
+            numbersLimit.Add(3);
+            //numbersLimit.Add(4); // Exception
+
+            numbersLimit.Print(); // Output: 1, 2, 3
         }
+    }
+}
+
+class LimitedList<T>
+{
+    private readonly int _maxSize;
+    private readonly List<T> _items = new();
+
+    public LimitedList(int maxSize)
+    {
+        _maxSize = maxSize;
+    }
+
+    public void Add(T item)
+    {
+        if (_items.Count >= _maxSize)
+            throw new InvalidOperationException("Maximum size reached.");
+
+        _items.Add(item);
+    }
+
+    public void Print()
+    {
+        Console.WriteLine(string.Join(", ", _items));
     }
 }
