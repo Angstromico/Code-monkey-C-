@@ -1,5 +1,4 @@
-﻿
-namespace Hello
+﻿namespace Hello
 {
     internal class Classes
     {
@@ -10,6 +9,9 @@ namespace Hello
             Person person2 = new Person("Bob", 25);
             Console.WriteLine($"Person 1: {person1.Name}, Age: {person1.Age}");
             Console.WriteLine($"Person 2: {person2.Name}, Age: {person2.Age}");
+
+            Car car1 = new Car("blue");
+            Console.WriteLine($"Car 1 color: {car1.color}");
         }
     }
 }
@@ -22,5 +24,23 @@ class Person
     {
         Name = name;
         Age = age;
+    }
+}
+
+class Car
+{
+    public string color = "red";
+
+    public Car() { }
+
+    public Car(string color)
+    {
+        this.color = color;
+    }
+
+    static void Main(string[] args)
+    {
+        Car myObj = new Car();
+        Console.WriteLine(myObj.color);
     }
 }
