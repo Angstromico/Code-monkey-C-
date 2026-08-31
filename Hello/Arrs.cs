@@ -91,7 +91,16 @@
             numbersLimit.Add(1);
             numbersLimit.Add(2);
             numbersLimit.Add(3);
-            //numbersLimit.Add(4); // Exception
+            try
+            {
+                numbersLimit.Add(4);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            Console.WriteLine("Program continues");
 
             numbersLimit.Print(); // Output: 1, 2, 3
         }
