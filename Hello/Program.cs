@@ -34,3 +34,5 @@ Console.WriteLine($"Result 1: {result1}, Result 2: {result2}");
 Arrs.Run();
 
 Loops.Run();
+
+Classes.Run();
