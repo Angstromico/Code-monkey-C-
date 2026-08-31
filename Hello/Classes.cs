@@ -12,6 +12,9 @@
 
             Car car1 = new Car("blue");
             Console.WriteLine($"Car 1 color: {car1.color}");
+
+            Player Manu = new Player("Manu", 100);
+            Console.WriteLine($"Player 1: {Manu.name}, Health: {Manu.health}");
         }
     }
 }
@@ -42,5 +45,16 @@ class Car
     {
         Car myObj = new Car();
         Console.WriteLine(myObj.color);
+    }
+}
+
+class Player
+{
+    public string name;
+    public int health;
+    public Player(string name, int health)
+    {
+        this.name = name;
+        this.health = health;
     }
 }
