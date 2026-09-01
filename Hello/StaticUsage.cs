@@ -11,12 +11,21 @@
             public static int Add(int a, int b) => a + b;
         }
 
+        public string Name { get; set; } = "Manu";          // Unique to each user
+        public static int TotalUsers { get; set; } = 0; // Shared by all users
+
         public static void Run()
         {
             // Using the static method from the Calculator class
             //When static methods are called, they are called on the class itself, not on an instance of the class.
             int result = Calculator.Add(5, 3);
             Console.WriteLine($"The sum is: {result}");
+        }
+
+        public StaticUsage(string name)
+        {
+            Name = name;
+            TotalUsers++; // Increments the shared global counter
         }
     }
 }

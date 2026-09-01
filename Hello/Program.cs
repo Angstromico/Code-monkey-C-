@@ -38,3 +38,8 @@ Loops.Run();
 Classes.Run();
 
 StaticUsage.Run();
+
+StaticUsage user = new StaticUsage("Alice");
+StaticUsage user2 = new StaticUsage("Bob");
+
+Console.WriteLine($"User 1: {user.Name}, User 2: {user2.Name}, Total Users: {StaticUsage.TotalUsers}");
