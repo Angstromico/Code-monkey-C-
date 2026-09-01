@@ -35,5 +35,13 @@
             // return email.EndsWith(_domain); // ❌ COMPILE ERROR: Cannot access non-static field
             return email.Contains("@");        //  Valid
         }
+
+        public void ProcessData()
+        {
+            int localOffset = 10;
+
+            // ❌ Error if marked static: cannot capture 'localOffset'
+            static int Calculate(int input) => input * 2;
+        }
     }
 }
