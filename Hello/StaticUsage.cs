@@ -27,5 +27,13 @@
             Name = name;
             TotalUsers++; // Increments the shared global counter
         }
+
+        private string _domain = "gmail.com";
+
+        public static bool IsValid(string email)
+        {
+            // return email.EndsWith(_domain); // ❌ COMPILE ERROR: Cannot access non-static field
+            return email.Contains("@");        //  Valid
+        }
     }
 }
