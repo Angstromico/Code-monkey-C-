@@ -36,3 +36,5 @@ Arrs.Run();
 Loops.Run();
 
 Classes.Run();
+
+StaticUsage.Run();
