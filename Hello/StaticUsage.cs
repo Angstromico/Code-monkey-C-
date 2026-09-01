@@ -43,5 +43,12 @@
             // ❌ Error if marked static: cannot capture 'localOffset'
             static int Calculate(int input) => input * 2;
         }
+
+        public int number = 5;
+
+        public static void IncrementNumber(StaticUsage instance)
+        {
+            instance.number++; // Accessing the instance variable through the passed instance
+        }
     }
 }
